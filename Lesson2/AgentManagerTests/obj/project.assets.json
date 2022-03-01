@@ -5972,6 +5972,9 @@
           "projectReferences": {
             "C:\\Users\\79515\\Desktop\\ASP\\Lesson2\\AgentManager\\AgentManager.csproj": {
               "projectPath": "C:\\Users\\79515\\Desktop\\ASP\\Lesson2\\AgentManager\\AgentManager.csproj"
+            },
+            "C:\\Users\\79515\\Desktop\\ASP\\Lesson2\\Lesson2\\AgentManager.csproj": {
+              "projectPath": "C:\\Users\\79515\\Desktop\\ASP\\Lesson2\\Lesson2\\AgentManager.csproj"
             }
           }
         }

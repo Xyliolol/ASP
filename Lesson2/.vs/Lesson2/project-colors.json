@@ -5,7 +5,12 @@
       "ProjectGuid": "ac642f9e-d8e1-4335-81e9-5d768e616aa4",
       "DisplayName": "Lesson2",
       "ColorIndex": 0
+    },
+    "751ace14-ddf4-48a8-a922-fb33e5c9a343": {
+      "ProjectGuid": "751ace14-ddf4-48a8-a922-fb33e5c9a343",
+      "DisplayName": "AgentManager",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 2
 }

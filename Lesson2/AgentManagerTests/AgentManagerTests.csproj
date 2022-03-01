@@ -21,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AgentManager\AgentManager.csproj" />
+    <ProjectReference Include="..\Lesson2\AgentManager.csproj" />
   </ItemGroup>
 
 </Project>

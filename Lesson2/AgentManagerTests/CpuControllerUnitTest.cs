@@ -1,4 +1,3 @@
-using AgentManager.Controllers;
 using AgentManager.Enum.EnumClass;
 using Microsoft.AspNetCore.Mvc;
 using System;

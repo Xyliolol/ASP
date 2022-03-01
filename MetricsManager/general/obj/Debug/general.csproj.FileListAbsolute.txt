@@ -1,0 +1,5 @@
+C:\Users\79515\Desktop\ASP\MetricsManager\general\bin\Debug\general.dll
+C:\Users\79515\Desktop\ASP\MetricsManager\general\bin\Debug\general.pdb
+C:\Users\79515\Desktop\ASP\MetricsManager\general\obj\Debug\general.csproj.CoreCompileInputs.cache
+C:\Users\79515\Desktop\ASP\MetricsManager\general\obj\Debug\general.dll
+C:\Users\79515\Desktop\ASP\MetricsManager\general\obj\Debug\general.pdb
