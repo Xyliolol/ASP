@@ -2,11 +2,11 @@
 {
     public interface IRepository<T> where T : class
     {
+        IList<T> GetByTimePeriod(long fromTime, long toTime);    
+         void Create(T item);
         IList<T> GetAll();
 
         T GetById(int id);
-
-        void Create(T item);
 
         void Update(T item);
 

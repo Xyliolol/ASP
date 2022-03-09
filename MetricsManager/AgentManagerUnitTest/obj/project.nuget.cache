@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "MLKbrG04GEY4Xrr4TUPcbsdsSj/9BS1zRf16y3mxBq/o9RlQVMU0F2qjOKdAX6lNT+fzdbmWTuje+gfAqN6Y2A==",
+  "dgSpecHash": "fIVNRDWkbmJjoLBzJpsmxZ+ih/oFj6Ood5AgpSQ5XE9pzmkP3XCBaeHJ4n2QuETXfjeIQ6VuPpzatL1kCrMjug==",
   "success": true,
   "projectFilePath": "C:\\Users\\79515\\Desktop\\ASP\\MetricsManager\\AgentManagerUnitTest\\AgentManagerUnitTest.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\79515\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\castle.core\\4.4.1\\castle.core.4.4.1.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\coverlet.collector\\3.1.0\\coverlet.collector.3.1.0.nupkg.sha512",
+    "C:\\Users\\79515\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.codecoverage\\16.11.0\\microsoft.codecoverage.16.11.0.nupkg.sha512",
-    "C:\\Users\\79515\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
+    "C:\\Users\\79515\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.2\\microsoft.data.sqlite.core.6.0.2.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",

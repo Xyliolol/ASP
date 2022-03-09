@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace general.Enum
-{   
-        public enum Percentile
+﻿namespace general.Enum
+{
+    public enum Percentile
         {
             Median = 0,
             P75 = 1,
