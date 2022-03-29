@@ -1,0 +1,977 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MetricsManager</name>
+    </assembly>
+    <members>
+        <member name="M:MyNamespace.IClient.ApiAgentsRegisterAsync(MyNamespace.AgentInfo)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsRegister(MyNamespace.AgentInfo)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsRegisterAsync(MyNamespace.AgentInfo,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsEnableAsync(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsEnable(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsEnableAsync(System.Int32,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsDisableAsync(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsDisable(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsDisableAsync(System.Int32,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsAgentsAsync">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsAgents">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiAgentsAgentsAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsCpuFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsDotnetErrorsCountFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddLeftFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddLeftFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsHddLeftFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsNetworkFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamAvailableFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamAvailableFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.IClient.ApiMetricsRamAvailableFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsRegisterAsync(MyNamespace.AgentInfo)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsRegister(MyNamespace.AgentInfo)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsRegisterAsync(MyNamespace.AgentInfo,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsEnableAsync(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsEnable(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsEnableAsync(System.Int32,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsDisableAsync(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsDisable(System.Int32)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsDisableAsync(System.Int32,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsAgentsAsync">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsAgents">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiAgentsAgentsAsync(System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsCpuFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsDotnetErrorsCountFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddLeftFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddLeftFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsHddLeftFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsNetworkFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamAgentFromTo(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamAgentFromToAsync(System.Int32,System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <param name="agentId">ID агента</param>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamClusterFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamClusterFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Если всё хорошо</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamAvailableFromToAsync(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamAvailableFromTo(System.DateTimeOffset,System.DateTimeOffset)">
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MyNamespace.Client.ApiMetricsRamAvailableFromToAsync(System.DateTimeOffset,System.DateTimeOffset,System.Threading.CancellationToken)">
+            <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+            <returns>Success</returns>
+            <exception cref="T:MyNamespace.ApiException">A server side error occurred.</exception>
+        </member>
+        <member name="M:MetricsManager.Controllers.CpuMetricsController.GetMetricsFromAgent(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/cpu/agent/1/from/2022.03.14/to/2022.03.17
+            </remarks>
+            <param name="agentId">ID агента</param>  
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик и ID агента, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.CpuMetricsController.GetMetricsFromAllCluster(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/cpu/cluster/from/2022.03.14/to/2022.03.17
+            </remarks>        
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.DotNetMetricsController.GetErrorsCountFromAgent(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени c id агентом
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/cpu/agent/1/from/2022.03.14/to/2022.03.17
+            </remarks>
+            <param name="agentId">ID агента</param>  
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик и ID агента, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.DotNetMetricsController.GetErrorsCountFromAllCluster(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики CPU на заданном диапазоне времени
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/cpu/cluster/from/2022.03.14/to/2022.03.17
+            </remarks>        
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.HddMetricsController.GetFreeHDDSpaceFromAgent(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени c ID агента
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/hdd/agent/1/from/2022.03.14/to/2022.03.17
+            </remarks> 
+            <param name="agentId">ID агента</param> 
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик и ID агента, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.HddMetricsController.GetFreeHDDSpace(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Hdd на заданном диапазоне времени
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/hdd/cluster/from/2022.03.14/to/2022.03.17
+            </remarks>         
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.NetworkMetricsController.GetMetricsFromAgent(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени c ID агента
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/network/agent/1/from/2022.03.14/to/2022.03.17
+            </remarks> 
+            <param name="agentId">ID агента</param> 
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик и ID агента, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.NetworkMetricsController.GetMetricsFromAllCluster(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Network на заданном диапазоне времени
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/network/cluster/from/2022.03.14/to/2022.03.17
+            </remarks>         
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.RamMetricsController.GetAvailableFromAgent(System.Int32,System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени c ID агента
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/ram/agent/1/from/2022.03.14/to/2022.03.17
+            </remarks> 
+            <param name="agentId">ID агента</param> 
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик и ID агента, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+        <member name="M:MetricsManager.Controllers.RamMetricsController.GetAvailable(System.DateTimeOffset,System.DateTimeOffset)">
+            <summary>
+            Получает метрики Ram на заданном диапазоне времени
+            </summary>
+            <remarks>
+            Пример запроса:       
+            GET api/metrics/ram/cluster/from/2022.03.14/to/2022.03.17
+            </remarks>         
+            <param name="fromTime">начальная метрика времени в форме даты с 01.01.1970</param>  
+            <param name="toTime">конечная метрика времени в форме даты с 01.01.1970</param>
+            <returns>Список метрик, сохранённых в заданном диапазоне времени</returns>
+            <response code="200">Если всё хорошо</response>
+            <response code="400">Если передали неправильные параметры</response>
+        </member>
+    </members>
+</doc>

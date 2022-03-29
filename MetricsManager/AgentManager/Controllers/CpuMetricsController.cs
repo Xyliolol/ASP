@@ -1,5 +1,4 @@
 ﻿using AgentManager.Interface;
-using general.Enum;
 using Microsoft.AspNetCore.Mvc;
 using AutoMapper;
 using AgentManager.Request;
@@ -12,8 +11,10 @@ namespace AgentManager.Controllers
     public class CpuMetricsController : ControllerBase
     {
         private readonly ILogger<CpuMetricsController> _logger;
+
         private readonly ICpuMetricsRepository _cpuMetricsRepository;
-        private readonly IMapper _mapper;   
+
+        private readonly IMapper _mapper;
 
         public CpuMetricsController(ILogger<CpuMetricsController> logger, ICpuMetricsRepository repository, IMapper mapper)
         {
@@ -21,7 +22,6 @@ namespace AgentManager.Controllers
             _cpuMetricsRepository = repository;
             _mapper = mapper;
         }
-
 
         [HttpGet("from/{fromTime}/to/{toTime}")]
         public IActionResult GetMetrics([FromRoute] DateTimeOffset fromTime, [FromRoute] DateTimeOffset toTime)
@@ -40,16 +40,5 @@ namespace AgentManager.Controllers
             return Ok(response);
         }
 
-        //[HttpGet("from/{fromTime}/to/{toTime}/percentiles/{percentile}")]
-        //public IActionResult GetMetricsByPercentile(
-        //    [FromRoute] long fromTime,
-        //    [FromRoute] long toTime,
-        //    [FromRoute] Percentile percentile)
-        //{
-        //    _logger.LogInformation($"Получение показателей ЦП за период: {fromTime},\t {toTime} c процентилем {percentile}",
-        //        fromTime.ToString(),
-        //        toTime.ToString());
-        //    return Ok();
-        //}
     }
 }

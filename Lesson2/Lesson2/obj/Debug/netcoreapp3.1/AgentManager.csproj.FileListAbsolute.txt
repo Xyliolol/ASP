@@ -1,0 +1,6 @@
+C:\Users\79515\Desktop\ASP\Lesson2\Lesson2\obj\Debug\netcoreapp3.1\AgentManager.csproj.AssemblyReference.cache
+C:\Users\79515\Desktop\ASP\Lesson2\Lesson2\obj\Debug\netcoreapp3.1\AgentManager.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79515\Desktop\ASP\Lesson2\Lesson2\obj\Debug\netcoreapp3.1\AgentManager.AssemblyInfoInputs.cache
+C:\Users\79515\Desktop\ASP\Lesson2\Lesson2\obj\Debug\netcoreapp3.1\AgentManager.AssemblyInfo.cs
+C:\Users\79515\Desktop\ASP\Lesson2\Lesson2\obj\Debug\netcoreapp3.1\AgentManager.csproj.CoreCompileInputs.cache
+C:\Users\79515\Desktop\ASP\Lesson2\Lesson2\obj\Debug\netcoreapp3.1\AgentManager.MvcApplicationPartsAssemblyInfo.cache

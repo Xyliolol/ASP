@@ -1,4 +1,5 @@
-using AgentManager;
+
+using MetricsAgent;
 using NLog.Web;
 
 namespace MetricsManager
