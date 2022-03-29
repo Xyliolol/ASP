@@ -1,7 +1,0 @@
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.csproj.AssemblyReference.cache
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.AssemblyInfoInputs.cache
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.AssemblyInfo.cs
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.csproj.CoreCompileInputs.cache
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\MetricsAgent.MvcApplicationPartsAssemblyInfo.cache
