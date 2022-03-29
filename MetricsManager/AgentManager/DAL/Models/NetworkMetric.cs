@@ -1,11 +1,11 @@
 ﻿namespace AgentManager.Models
 {
-    public class RamMetric
+    public class NetworkMetric
     {
         public int Id { get; set; }
 
         public int Value { get; set; }
 
-        public TimeSpan Time { get; set; }
+        public long Time { get; set; }
     }
 }

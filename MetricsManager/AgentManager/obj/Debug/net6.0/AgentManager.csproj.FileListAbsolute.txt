@@ -42,3 +42,5 @@ C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\AgentMan
 C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\ref\AgentManager.dll
 C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\AgentManager.pdb
 C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\obj\Debug\net6.0\AgentManager.genruntimeconfig.cache
+C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\79515\Desktop\ASP\MetricsManager\AgentManager\bin\Debug\net6.0\Dapper.dll

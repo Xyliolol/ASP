@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "l1AbzyMCl+aFsTO2RVPUXIlCjbSg0Jed9zDljZpKciLdbxDGf/KpnQX8PR2fLhgbHUlIBm6PdPCTsadX22VMVw==",
+  "dgSpecHash": "6RLydLp5+beHooXPxWpxCfHpghUGm0ZESUqXnzdhnjppKEqZAWVhAM9sjp71IzS9shq+FsIxS1qOXo5Si4fLhw==",
   "success": true,
   "projectFilePath": "C:\\Users\\79515\\Desktop\\ASP\\MetricsManager\\AgentManager\\AgentManager.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\79515\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\79515\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
+    "C:\\Users\\79515\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.2\\microsoft.data.sqlite.core.6.0.2.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\79515\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\5.0.0\\microsoft.extensions.dependencyinjection.5.0.0.nupkg.sha512",

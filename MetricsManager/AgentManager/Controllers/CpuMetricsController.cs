@@ -1,7 +1,9 @@
 ﻿using AgentManager.Interface;
 using general.Enum;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using AutoMapper;
+using AgentManager.Request;
+using static AgentManager.Responses.AllMetricsResponses;
 
 namespace AgentManager.Controllers
 {
@@ -11,35 +13,43 @@ namespace AgentManager.Controllers
     {
         private readonly ILogger<CpuMetricsController> _logger;
         private readonly ICpuMetricsRepository _cpuMetricsRepository;
+        private readonly IMapper _mapper;   
 
-        public CpuMetricsController(ILogger<CpuMetricsController> logger, ICpuMetricsRepository repository)
+        public CpuMetricsController(ILogger<CpuMetricsController> logger, ICpuMetricsRepository repository, IMapper mapper)
         {
             _logger = logger;
             _cpuMetricsRepository = repository;
+            _mapper = mapper;
         }
 
 
         [HttpGet("from/{fromTime}/to/{toTime}")]
-        public IActionResult GetMetrics(
-            [FromRoute] TimeSpan fromTime,
-            [FromRoute] TimeSpan toTime)
+        public IActionResult GetMetrics([FromRoute] DateTimeOffset fromTime, [FromRoute] DateTimeOffset toTime)
         {
-            _logger.LogInformation($"Получение показателей ЦП за период: {fromTime},\t {toTime}",
-                fromTime.ToString(),
-                toTime.ToString());
-            return Ok();
+            _logger.LogInformation($"Запуск CpuMetricsController.GetMetrics с параметрами: {fromTime}, {toTime}.");
+            var metrics = _cpuMetricsRepository.GetByTimePeriod(fromTime.ToUnixTimeSeconds(), toTime.ToUnixTimeSeconds());
+            var response = new CpuMetricResponse()
+            {
+                Metrics = new List<CpuMetricsDto>()
+            };
+
+            foreach (var metric in metrics)
+            {
+                response.Metrics.Add(_mapper.Map<CpuMetricsDto>(metric));
+            }
+            return Ok(response);
         }
 
-        [HttpGet("from/{fromTime}/to/{toTime}/percentiles/{percentile}")]
-        public IActionResult GetMetricsByPercentile(
-            [FromRoute] TimeSpan fromTime,
-            [FromRoute] TimeSpan toTime,
-            [FromRoute] Percentile percentile)
-        {
-            _logger.LogInformation($"Получение показателей ЦП за период: {fromTime},\t {toTime} c процентилем {percentile}",
-                fromTime.ToString(),
-                toTime.ToString());
-            return Ok();
-        }
+        //[HttpGet("from/{fromTime}/to/{toTime}/percentiles/{percentile}")]
+        //public IActionResult GetMetricsByPercentile(
+        //    [FromRoute] long fromTime,
+        //    [FromRoute] long toTime,
+        //    [FromRoute] Percentile percentile)
+        //{
+        //    _logger.LogInformation($"Получение показателей ЦП за период: {fromTime},\t {toTime} c процентилем {percentile}",
+        //        fromTime.ToString(),
+        //        toTime.ToString());
+        //    return Ok();
+        //}
     }
 }
