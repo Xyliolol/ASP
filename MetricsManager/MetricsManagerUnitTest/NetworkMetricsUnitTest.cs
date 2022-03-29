@@ -1,51 +1,39 @@
+using AutoMapper;
 using MetricsManager.Controllers;
-using Microsoft.AspNetCore.Mvc;
+using MetricsManager.DAL.Interface;
+using MetricsManager.DAL.Models;
 using Microsoft.Extensions.Logging;
 using Moq;
 using System;
+using System.Collections.Generic;
 using Xunit;
 
-namespace MetricsManagerUnitTest
+namespace MetricsManagerTest
 {
     public class NetworkControllerUnitTests
     {
-        private NetworkMetricsController controller;
+        private readonly NetworkMetricsController _controller;
 
-        private Mock<ILogger<NetworkMetricsController>> mockLogger;
+        private readonly Mock<INetworkMetricsRepository> _mockRepository;
+
+        private readonly Mock<ILogger<NetworkMetricsController>> _mockLogger;
+
+        private readonly Mock<IMapper> _mockMapper;
 
         public NetworkControllerUnitTests()
         {
-            mockLogger = new Mock<ILogger<NetworkMetricsController>>();
-            controller = new NetworkMetricsController(mockLogger.Object);
+            _mockLogger = new Mock<ILogger<NetworkMetricsController>>();
+            _mockRepository = new Mock<INetworkMetricsRepository>();
+            _mockMapper = new Mock<IMapper>();
+            _controller = new NetworkMetricsController(_mockLogger.Object, _mockRepository.Object, _mockMapper.Object);
         }
 
         [Fact]
-        public void GetMetricsFromAllCluster_ReturnOk()
+        public void GetByTimePeriod_ShouldCall_GetByTimePeriod_From_Repository()
         {
-            //Arrange
-            var fromTime = TimeSpan.FromSeconds(0);
-            var toTime = TimeSpan.FromSeconds(100);
-
-            //act
-            var result = controller.GetMetricsFromAllCluster(fromTime, toTime);
-
-            //Assert
-            _ = Assert.IsAssignableFrom<IActionResult>(result);
-        }
-
-        [Fact]
-        public void GetMetricsFromAgent_ReturnsOk()
-        {
-            //Arrange
-            var agentId = 1;
-            var fromTime = TimeSpan.FromSeconds(0);
-            var toTime = TimeSpan.FromSeconds(100);
-
-            //act
-            var result = controller.GetMetricsFromAgent(agentId, fromTime, toTime);
-
-            //Assert
-            _ = Assert.IsAssignableFrom<IActionResult>(result);
+            _mockRepository.Setup(repository => repository.GetByTimePeriod(It.IsAny<long>(), It.IsAny<long>())).Returns(new List<NetworkMetric>());
+            var result = _controller.GetMetricsFromAllCluster(DateTimeOffset.UtcNow, DateTimeOffset.UtcNow);
+            _mockRepository.Verify(repository => repository.GetByTimePeriod(It.IsAny<long>(), It.IsAny<long>()), Times.AtMostOnce());
         }
     }
 }

@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "YbtjgxEzAdp+o6DVNQqootwOIsERzV42m+vgcCA/4RM=",
-  "Source": "AgentManager",
-  "BasePath": "_content/AgentManager",
+  "Hash": "a4//ou4BzANko00WYDeF5I1W3Ek3ut3iQJNZtyPY+qg=",
+  "Source": "MetricsAgent",
+  "BasePath": "_content/MetricsAgent",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

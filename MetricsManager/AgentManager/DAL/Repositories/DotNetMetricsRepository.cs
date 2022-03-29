@@ -28,51 +28,51 @@ namespace AgentManager.Repositories
             }
         }
 
-        public void Delete(int id)
-        {
-            using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
-            {
-                connection.Execute("DELETE FROM dotnetmetrics WHERE id=@id",
-                    new
-                    {
-                        id = id
-                    });
-            }
-        }
+        //public void Delete(int id)
+        //{
+        //    using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
+        //    {
+        //        connection.Execute("DELETE FROM dotnetmetrics WHERE id=@id",
+        //            new
+        //            {
+        //                id = id
+        //            });
+        //    }
+        //}
 
-        public void Update(DotNetMetric item)
-        {
-            using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
-            {
-                connection.Execute("UPDATE dotnetmetrics SET value = @value, time = @time WHERE id=@id",
-                    new
-                    {
-                        value = item.Value,
-                        time = item.Time,
-                        id = item.Id
-                    });
-            }
-        }
+        //public void Update(DotNetMetric item)
+        //{
+        //    using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
+        //    {
+        //        connection.Execute("UPDATE dotnetmetrics SET value = @value, time = @time WHERE id=@id",
+        //            new
+        //            {
+        //                value = item.Value,
+        //                time = item.Time,
+        //                id = item.Id
+        //            });
+        //    }
+        //}
 
-        public IList<DotNetMetric> GetAll()
-        {
-            using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
-            {
-                // Читаем, используя Query, и в шаблон подставляем тип данных,
-                // объект которого Dapper, он сам заполнит его поля
-                // в соответствии с названиями колонок
-                return connection.Query<DotNetMetric>("SELECT Id, Time, Value FROM dotnetmetrics").ToList();
-            }
-        }
+        //public IList<DotNetMetric> GetAll()
+        //{
+        //    using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
+        //    {
+        //        // Читаем, используя Query, и в шаблон подставляем тип данных,
+        //        // объект которого Dapper, он сам заполнит его поля
+        //        // в соответствии с названиями колонок
+        //        return connection.Query<DotNetMetric>("SELECT Id, Time, Value FROM dotnetmetrics").ToList();
+        //    }
+        //}
 
-        public DotNetMetric GetById(int id)
-        {
-            using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
-            {
-                return connection.QuerySingle<DotNetMetric>("SELECT Id, Time, Value FROM dotnetmetrics WHERE id=@id",
-                    new { id = id });
-            }
-        }
+        //public DotNetMetric GetById(int id)
+        //{
+        //    using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))
+        //    {
+        //        return connection.QuerySingle<DotNetMetric>("SELECT Id, Time, Value FROM dotnetmetrics WHERE id=@id",
+        //            new { id = id });
+        //    }
+        //}
         public IList<DotNetMetric> GetByTimePeriod(long fromTime, long toTime)
         {
             using (var connection = new SQLiteConnection(ConnectionManager.ConnectionString))

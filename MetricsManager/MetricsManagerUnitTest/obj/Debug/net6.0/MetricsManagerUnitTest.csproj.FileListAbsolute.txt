@@ -117,3 +117,4 @@ C:\Users\79515\Desktop\ASP\MetricsManager\MetricsManagerUnitTest\bin\Debug\net6.
 C:\Users\79515\Desktop\ASP\MetricsManager\MetricsManagerUnitTest\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\Users\79515\Desktop\ASP\MetricsManager\MetricsManagerUnitTest\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\79515\Desktop\ASP\MetricsManager\MetricsManagerUnitTest\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\79515\Desktop\ASP\MetricsManager\MetricsManagerUnitTest\bin\Debug\net6.0\general.dll.config

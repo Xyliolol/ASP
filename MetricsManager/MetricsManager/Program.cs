@@ -12,16 +12,15 @@ namespace MetricsManager
                 logger.Debug("init main");
                 CreateHostBuilder(args).Build().Run();
             }
-         
+           
             catch (Exception exception)
-            {
-         
+            {             
                 logger.Error(exception, "Stopped program because of exception");
                 throw;
             }
             finally
             {
-               
+                
                 NLog.LogManager.Shutdown();
             }
         }
@@ -29,7 +28,7 @@ namespace MetricsManager
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args).ConfigureWebHostDefaults(webBuilder =>
             {
-                webBuilder.UseStartup<StartUp>();
+                webBuilder.UseStartup<Startup>();
             })
             .ConfigureLogging(logging =>
             {
